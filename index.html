@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D2 Badminton Academy</title>
+    <style>
+        /* General Reset */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        /* Header Styles */
+        header {
+            background: #1a1a1a;
+            color: #fff;
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('2024-10-12.jpg') no-repeat center center/cover;
+            height: 400px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+        .hero h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 16px;
+            margin: 10px 0 0;
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 20px;
+            text-align: center;
+        }
+        .section h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .section p {
+            font-size: 14px;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .gallery img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer */
+        footer {
+            background: #1a1a1a;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero {
+                height: 300px;
+            }
+            .hero h1 {
+                font-size: 24px;
+            }
+            .hero p {
+                font-size: 14px;
+            }
+            .section h2 {
+                font-size: 20px;
+            }
+            .section p {
+                font-size: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="d2-logo.png" alt="D2 Badminton Academy Logo">
+        <h1>D2 Badminton Academy</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#membership">Membership</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="https://maps.app.goo.gl/uDjgvMMFVS4szfoi9" target="_blank">Maps</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="hero">
+    <div>
+        <h1>Welcome to D2 Badminton Academy</h1>
+        <p>Where champions are made</p>
+    </div>
+</div>
+
+<section id="about" class="section">
+    <h2>About Us</h2>
+    <p>D2 Badminton Academy is a professional badminton court run by Mr. Muralidharan, a professional Physical Education (PE) coach and a renowned basketball player and coach from Tamil Nadu. Our academy is committed to nurturing talent and promoting sportsmanship.</p>
+</section>
+
+<section id="membership" class="section">
+    <h2>Membership</h2>
+    <p>Join us and take your game to the next level! We offer affordable membership options:</p>
+    <ul style="list-style: none; padding: 0;">
+        <li><strong>Monthly Membership:</strong> Rs. 1500</li>
+        <li><strong>Weekend Sessions (2 hours):</strong> Rs. 200</li>
+    </ul>
+</section>
+
+<section id="gallery" class="section">
+    <h2>Gallery</h2>
+    <div class="gallery">
+        <img src="2024-10-12.jpg" alt="Badminton Court 1">
+        <img src="2024-10-12.jpg" alt="Badminton Court 2">
+        <img src="2024-10-12.jpg" alt="Players in Action">
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>For inquiries, please contact Mr. Muralidharan:</p>
+    <p><strong>Phone:</strong> <a href="tel:+918124663116">+91 81246 63116</a></p>
+</section>
+
+
+<footer>
+    <p>&copy; 2024 D2 Badminton Academy. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

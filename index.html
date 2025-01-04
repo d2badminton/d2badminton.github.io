@@ -1,15 +1,17 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="D2 Badminton Academy - Where champions are made. Join us for professional badminton training and elevate your game.">
+    <meta name="keywords" content="Badminton, Sports, Academy, Membership, Tamil Nadu, Coaching">
+    <meta name="author" content="D2 Badminton Academy">
     <title>D2 Badminton Academy</title>
     <style>
         /* General Reset */
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             color: #333;
             background-color: #f9f9f9;
         }
@@ -23,6 +25,7 @@
             align-items: center;
             justify-content: space-between;
             flex-wrap: wrap;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         .logo {
             display: flex;
@@ -47,9 +50,10 @@
             color: #fff;
             text-decoration: none;
             font-size: 16px;
+            transition: color 0.3s ease;
         }
         nav ul li a:hover {
-            text-decoration: underline;
+            color: #fdd835;
         }
 
         /* Hero Section */
@@ -66,47 +70,73 @@
         .hero h1 {
             font-size: 36px;
             margin: 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
         }
         .hero p {
-            font-size: 16px;
-            margin: 10px 0 0;
+            font-size: 18px;
+            margin: 10px 0 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        .hero .cta {
+            background: #fdd835;
+            color: #1a1a1a;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+        .hero .cta:hover {
+            background: #fff176;
         }
 
         /* Section Styles */
         .section {
-            padding: 20px;
+            padding: 40px 20px;
             text-align: center;
         }
         .section h2 {
-            font-size: 24px;
-            margin-bottom: 10px;
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #1a1a1a;
         }
         .section p {
-            font-size: 14px;
+            font-size: 16px;
             line-height: 1.6;
             max-width: 800px;
-            margin: 0 auto;
+            margin: 0 auto 20px;
         }
 
         .gallery {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
             margin-top: 20px;
-            flex-wrap: wrap;
         }
         .gallery img {
-            max-width: 100%;
+            width: 100%;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
         }
 
         /* Footer */
         footer {
             background: #1a1a1a;
             color: #fff;
-            padding: 10px;
+            padding: 20px;
             text-align: center;
+            font-size: 14px;
+        }
+        footer a {
+            color: #fdd835;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
         }
 
         /* Responsive Design */
@@ -115,16 +145,16 @@
                 height: 300px;
             }
             .hero h1 {
-                font-size: 24px;
+                font-size: 28px;
             }
             .hero p {
                 font-size: 14px;
             }
             .section h2 {
-                font-size: 20px;
+                font-size: 22px;
             }
             .section p {
-                font-size: 12px;
+                font-size: 14px;
             }
         }
 
@@ -163,6 +193,7 @@
     <div>
         <h1>Welcome to D2 Badminton Academy</h1>
         <p>Where champions are made</p>
+        <a href="#membership" class="cta">Join Now</a>
     </div>
 </div>
 
@@ -195,9 +226,8 @@
     <p><strong>Phone:</strong> <a href="tel:+918124663116">+91 81246 63116</a></p>
 </section>
 
-
 <footer>
-    <p>&copy; 2024 D2 Badminton Academy. All rights reserved.</p>
+    <p>&copy; 2024 D2 Badminton Academy. All rights reserved. | <a href="#">Privacy Policy</a></p>
 </footer>
 
 </body>
